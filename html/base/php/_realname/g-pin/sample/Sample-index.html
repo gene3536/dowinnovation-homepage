@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=euc-kr">
+	<meta content="Apache Forrest" name="Generator">
+	<meta name="Forrest-version" content="0.8">
+	<meta name="Forrest-skin-name" content="pelt">
+
+	<link rel="shortcut icon" href="">
+</head>
+<body>
+
+<script type="text/javascript">
+
+	// --------------------------------
+    // 서비스 함수들
+	// --------------------------------
+	
+	function testAuth() {
+	    wWidth = 360;
+	    wHight = 120;
+	    
+	    wX = (window.screen.width - wWidth) / 2;
+	    wY = (window.screen.height - wHight) / 2;
+	    
+	    // Request Page Call
+	    var w = window.open("Sample-AuthRequest.php", "gPinLoginWin", "directories=no,toolbar=no,left="+wX+",top="+wY+",width="+wWidth+",height="+wHight);
+	}
+	
+	function testSiteUserConfirm() {
+			wWidth = 350;
+			wHight = 120;
+			wX = (window.screen.width - wWidth) / 2;
+			wY = (window.screen.height - wHight) / 2;
+			
+			attr = "GPIN_AQ_SERVICE_SITE_USER_CONFIRM";
+	
+			requrl = "Sample-SiteUserConfirmRequest.php?Attr="+attr+"&vidn=" + vidn.value + "|" + siteuserid.value; // vidn 값에 vidn + siteuserid 값을 붙여 보낸다.
+			
+			var w = window.open(requrl, "_blank", "directories=no,toolbar=no,left="+wX+",top="+wY+",width="+wWidth+",height="+wHight);
+	}
+	
+	function testUserSync() {
+	    alert("이 테스트는 G-PIN센터에서 시작됩니다.");
+	}
+	
+	function testUserDupValue() {
+			wWidth = 850;
+			wHight = 520;
+			wX = (window.screen.width - wWidth) / 2;
+			wY = (window.screen.height - wHight) / 2;
+	
+			requrl = "./Sample-UserDuplicationValue.php?regNo=" + regNo.value + "&siteId=" + siteId.value;
+	
+			var w = window.open(requrl, "_blank", "directories=no,toolbar=no,left="+wX+",top="+wY+",width="+wWidth+",height="+wHight);
+	}	
+	
+
+</script>
+
+
+<div id="main">
+<div id="publishedStrip">
+
+	<!--+
+	    |start Subtabs
+	    +-->
+	<div id="level2tabs"></div>
+	
+	<!--+
+	    |end Endtabs
+	    +-->
+	</div>
+	
+	<!--+
+	    |start content
+	    +-->
+	<div id="content">
+	
+		<h1>Sample Page 테스트</h1>
+		
+		<div id="minitoc-area">
+			<ul class="minitoc">
+				<li>
+					<a href="#sentence1">본인확인(Auth)</a>
+				</li>
+				<li>
+					<a href="#sentence2">이용기관 가입확인(SiteUserConfirm)</a>
+				</li>
+				<li>
+					<a href="#sentence5">사용자 정보 동기화(UserSync)</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+<!-- ################################################################################ -->
+<!-- ###   단락					                                                  ### -->
+<!-- ################################################################################ -->
+ 	<br />
+ 	<br />
+ 	<br />
+	<a name="N10011"></a><a name="sentence1"></a>
+	<h2 class="boxed">본인확인(Auth)</h2>
+ 	<hr color="#ffa500" />
+	<div class="section">
+		<p>
+		        G-PIN 서비스의 가장 기본이 되며 또한 지금까지 앞 단계에서의 설정과정을 처음 테스트 해보는 서비스이기도 합입니다.
+		        이 서비스의 테스트로 지금까지의 설정정보가 올바른지 확인해 볼 수 있게 됩니다.
+		        <br />
+		        본인확인 결과에는 개인식별번호와 이름 그리고 중복가입확인 정보가 포함됩니다.
+ 		</p>
+		<p>
+						<input type="button" value="테스트 실행" onClick="testAuth()" onKeyPress="" />
+		</p>
+	</div>
+
+    
+<!-- ################################################################################ -->
+<!-- ###   단락					                                                  ### -->
+<!-- ################################################################################ -->
+ 	<br />
+ 	<br />
+ 	<br />
+	<a name="N1003E"></a><a name="sentence2"></a>
+	<h2 class="boxed">이용기관 가입확인(SiteUserConfirm)</h2>
+ 	<hr color="#ffa500" />
+	<div class="section">
+		<p>
+		        이용기관 회원가입 처리 후, 회원가입이 정상적으로 최종 완료되었음을  G-PIN센터에 알려주는 서비스입니다. 이 후 G-PIN센터에서는 해당 회원에 대하여 이용기관의 정상적인 가입회원으로 인정합니다.
+		        이 때 아래 예에서와 같이 가입한 회원의 '개인식별번호'와 사이트에서의 '가입 ID' 값을 요구합니다.
+		        <br />
+		        서비스 호출 결과, 성공 유무에 따라 이용기관에서의 회원가입 처리 절차를 마무리 하십시오.
+ 		</p>
+		<p>
+			개인식별번호: <input id="vidn" type="text" size="20" value=""/>
+			<br />
+			이용기관 사용자 ID(사이트에서의 ID): <input id="siteuserid" type="text" size="15" value=""/>
+	        <br />
+	        <br />
+			<input type="button" value="테스트 실행" onClick="testSiteUserConfirm()" onKeyPress="" />
+		</p>
+	</div>
+
+
+ 
+ 
+    
+<!-- ################################################################################ -->
+<!-- ###   단락					                                                  ### -->
+<!-- ################################################################################ -->
+ 	<br />
+ 	<br />
+ 	<br />
+	<a name="N1011D"></a><a name="sentence5"></a>
+	<h2 class="boxed">사용자 정보 동기화(UserSync)</h2>
+ 	<hr color="#ffa500" />
+	<div class="section">
+		<p>
+		        이용기관에서 회원의 부가정보가 필요할 때 요청하는 서비스 중, 로그인 과정이 없이 직접 G-PIN센터와 이용기관과의 협의에 의해 사용자 정보을 요청하는 페이지입니다. 
+		        이 서비스는 G-PIN센터에서 시작됩니다.
+ 		</p>
+		<p>
+			<input type="button" value="테스트 실행" onClick="javascript:testUserSync()" onKeyPress="" />
+		</p>
+	</div>
+
+  
+    
+  
+</div>
+<!-- ================================================================================ -->
+<!--+
+    |end content
+    +-->
+<div class="clearboth">&nbsp;</div>
+
+</div>
+</body>
+</html>

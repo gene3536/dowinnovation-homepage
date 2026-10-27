@@ -1,0 +1,87 @@
+@charset "utf-8"; 
+@import url("layout.css");
+@import url("board.css");
+@import url("font.css");
+@import url("common.css");
+
+#map_allWrap { position:relative; width:100%; height:100%; font-family:'Nanum Gothic'; font-size:12px; color:#666; clear:both; overflow-y:hidden; }
+#m_allWrap #m_con_w { position:relative; width:100%; min-width:1240px; padding:0px; margin:0px; clear:both; overflow:hidden; }
+
+/* Map Head ******************************************************************************************************************************************************************************************************************/
+#map_head_w { position:relative; width:100%; height:67px; min-width:900px; overflow:hidden; clear:both; border-top:3px solid #5f8dfc; border-bottom:1px solid #ddd; }
+#map_head_w ul li { margin-right:20px; float:left; font-size:16px; font-weight:bold; line-height:67px; }
+#map_head_w ul li.on a,
+#map_head_w ul li.on a:visited { padding:0px 20px; height:64px; text-align:center; color:#5f8dfc; display:block; font-weight:bold; border-bottom:3px solid #5f8dfc; }
+#map_head_w ul li.on a:hover, 
+#map_head_w ul li.on a:active { padding:0px 20px; height:64px; text-align:center; color:#5f8dfc; display:block; font-weight:bold; border-bottom:3px solid #5f8dfc; }
+#map_head_w ul li.off a,
+#map_head_w ul li.off a:visited { padding:0px 20px; height:67px; text-align:center; color:#222; display:block; font-weight:bold; border-bottom:0px; }
+#map_head_w ul li.off a:hover, 
+#map_head_w ul li.off a:active { padding:0px 20px; height:64px; text-align:center; color:#5f8dfc; display:block; font-weight:bold; border-bottom:3px solid #5f8dfc; }
+
+#map_head_w .ts { position:absolute; top:15px; right:20px; width:288px; height:37px; overflow:hidden; clear:both; }
+#map_head_w .ts fieldset { border:0px; }
+#map_head_w .ts fieldset input.ts_in { position:relative; width:157px; height:35px; line-height:37px; float:left; padding:0px 10px; font-size:13px; color:#999; border:1px solid #d9d9d9;}
+#map_head_w .ts fieldset p.ts_btn01 { position:absolute; top:0px; left:142px; width:35px; height:35px; float:left; background:url("/home/images/content/map_si.gif") no-repeat 9px 9px; }
+#map_head_w .ts fieldset p.ts_btn01 a { width:35px; height:35px; display:block; }
+#map_head_w .ts fieldset p.ts_btn02 { position:absolute; top:0px; left:179px; width:109px; height:37px; float:left; background-color:#5f8dfc; }
+#map_head_w .ts fieldset p.ts_btn02 a { width:109px; height:37px; display:block; line-height:35px; text-align:center; font-size:13px; color:#fff; font-weight:bold; }
+
+/* Map Content ******************************************************************************************************************************************************************************************************************/
+#map_w { position:relative; width:100%; overflow:hidden; clear:both; }
+#map_w .map_list { position:relative; width:343px; float:left; }
+#map_w .map_list .tit { position:relative; width:267px; height:20px; padding:25px 38px; font-size:18px; color:#fff; font-weight:bold; background-color:#5f8dfc; }
+#map_w .map_list .txt { position:relative; width:343px; height:800px;overflow:scroll; overflow-x:hidden; }
+
+#map_w .map_list .txt .sear_w { position:relative; width:100%; overflow:hidden; clear:both; }
+#map_w .map_list .txt .sear_w .sear_top { position:relative; width:100%; padding:15px 0px 20px 0px; overflow:hidden; clear:both;}
+#map_w .map_list .txt .sear_w .sear_top .title { position:relative; width:70%; padding-top:0px; padding-left:15px; line-height:20px; font-size:14px; color:#5f8dfc; font-weight:bold; }
+#map_w .map_list .txt .sear_w .sear_top .text { position:relative; width:70%; padding-top:5px; padding-left:15px; line-height:18px; font-size:11px; color:#999; font-weight:bold;  }
+#map_w .map_list .txt .sear_w .sear_top .text a { display:block; font-size:11px; color:#999; }
+#map_w .map_list .txt .sear_w .sear_top .clear_btn { position:absolute; top:20px; right:20px; font-size:11px; color:#999; }
+#map_w .map_list .txt .sear_w .sear_top .clear_btn a { display:block; font-size:11px; color:#999; }
+
+
+#map_w .map_list .txt .sear_w .sear_tit { position:relative; width:100%; height:31px; float:left; line-height:31px; padding-left:15px; font-weight:bold; border-top:1px solid #ddd; border-bottom:1px solid #ddd; background-color:#f3f4fb; }
+
+
+#map_w .map_list .txt .tab_w { position:relative; width:100%; overflow:hidden; clear:both; }
+#map_w .map_list .txt .tab_w ul.tab { position:relative; width:100%; float:left; }
+#map_w .map_list .txt .tab_w ul.tab li { position:relative; width:79px; height:35px; float:left; margin:1px 0px 1px 2px; line-height:35px; text-align:center; font-size:12px; color:#555; font-weight:bold; background-color:#f3f4fb; }
+#map_w .map_list .txt .tab_w ul.tab li a { display:block; width:79px; height:35px; }
+
+
+#map_w .map_list .txt .list_w { position:relative; width:100%; height:690px; overflow:hidden; clear:both; }
+#map_w .map_list .txt .list_w ul.list { position:relative; width:100%; float:left; }
+#map_w .map_list .txt .list_w ul.list li { position:relative; width:100%; padding:20px 0px; float:left; border-bottom:1px solid #ddd;  }
+#map_w .map_list .txt .list_w ul.list li.on { position:relative; width:100%; padding:20px 0px; float:left; border-bottom:1px solid #ddd; background-color:#f3f4fb; }
+#map_w .map_list .txt .list_w ul.list li.off { position:relative; width:100%; padding:20px 0px; float:left; border-bottom:1px solid #ddd; background-color:#fff; }
+#map_w .map_list .txt .list_w ul.list li .map_icon { position:absolute; top:15px; left:15px; }
+#map_w .map_list .txt .list_w ul.list li .map_tit { position:relative; width:50%; padding-top:0px; padding-left:50px; line-height:20px; font-size:14px; color:#5f8dfc; font-weight:bold; }
+#map_w .map_list .txt .list_w ul.list li .map_tel { position:relative; width:70%; padding-top:5px; padding-left:50px; line-height:18px; font-size:12px; color:#555; }
+#map_w .map_list .txt .list_w ul.list li .map_add { position:relative; width:70%; padding-top:5px; padding-left:50px; line-height:18px; font-size:12px; color:#555; }
+#map_w .map_list .txt .list_w ul.list li .map_add2 { position:relative; width:70%; padding-top:5px; padding-left:50px; line-height:18px; font-size:12px; color:#999; }
+#map_w .map_list .txt .list_w ul.list li .more { position:absolute; top:24px; right:20px; font-size:11px; color:#999; }
+#map_w .map_list .txt .list_w ul.list li .more a { display:block; font-size:11px; color:#999; }
+
+
+#map_w .map_list .txt .no_w { position:relative; width:100%; height:35px; overflow:hidden; clear:both; margin:30px 0px;  }
+#map_w .map_list .txt .no_w .map_page { text-align:center; }
+#map_w .map_list .txt .no_w .map_page a, em, img, span { display:inline-block; vertical-align:top; }
+#map_w .map_list .txt .no_w .map_page ol li { padding:0px 1px; }
+#map_w .map_list .txt .no_w .map_page .no_off a { font-weight:bold; width:29px; height:34px; font-size:14px; line-height:29px; color:#666; background:url("/home/images/board/no_bg.gif") no-repeat; }
+#map_w .map_list .txt .no_w .map_page .no_on a { font-weight:bold; width:29px; height:34px; font-size:14px; line-height:29px; color:#fff; background:url("/home/images/board/no_on_bg.gif") no-repeat; }
+
+
+#map_w .map_w { position:relative; float:left; overflow:hidden; }
+#map_w .map_w .map { position:relative; /* 작업요청 넓이랑 높이는 임시 값 입니다. */ min-width:500px; min-height:500px; overflow:hidden; clear:both; }
+#map_w .map_w .map .mp_on { position:absolute; top:20px; left:20px; }
+#map_w .map_w .map .mp_on figure { position:relative; width:321px; padding:20px 0px; border:1px solid #ddd; }
+#map_w .map_w .map .mp_on figure figcaption .map_icon { position:absolute; top:15px; left:15px; }
+#map_w .map_w .map .mp_on figure figcaption .map_tit { position:relative; width:50%; padding-top:0px; padding-left:50px; line-height:20px; font-size:14px; color:#5f8dfc; font-weight:bold; }
+#map_w .map_w .map .mp_on figure figcaption .map_tel { position:relative; width:70%; padding-top:5px; padding-left:50px; line-height:18px; font-size:12px; color:#555; }
+#map_w .map_w .map .mp_on figure figcaption .map_add { position:relative; width:70%; padding-top:5px; padding-left:50px; line-height:18px; font-size:12px; color:#555; }
+#map_w .map_w .map .mp_on figure figcaption .map_add2 { position:relative; width:70%; padding-top:5px; padding-left:50px; line-height:18px; font-size:12px; color:#999; }
+#map_w .map_w .map .mp_on figure figcaption .more { position:absolute; top:24px; right:20px; font-size:11px; color:#999; }
+#map_w .map_w .map .mp_on figure figcaption .more a { display:block; font-size:11px; color:#999; }
+

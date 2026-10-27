@@ -1,0 +1,164 @@
+﻿/** board_info - 140617 */
+.board_info {}
+.board_info {position:relative; margin-top:20px;}
+.board_info .info {float:left; margin:0 0 -2px 0;}
+.board_info .info:after {content:""; display:block; clear:both;}
+.board_info .info li {float:left; background:url("/base/imgs/board/board_info_dot.gif") no-repeat 2px 11px; padding:0 8px 0 8px;}
+.board_info .part {float:right; margin:0 0 5px 0;}
+
+/** board_viewer - 140617*/
+.board_viewer {zoom:1;}
+.board_viewer:after {content:""; display:block; clear:both;}
+.board_viewer_box {float:right; width:200px;}
+.board_viewer_box h3 {float:left; font-size:0; line-height:0;}
+.board_viewer_box li {float:left; font-size:0; line-height:0;}
+.board_viewer_box li a {display:block; padding:0 3px;}
+
+/* board - 140619 */
+.board {}
+.board {border-collapse:collapse; width:100%; background:url("/base/imgs/board/listThead.gif") repeat-x 0 0; border-bottom:2px solid #e5e5e5;}
+.board thead th {background:url("/base/imgs/board/thead_line.gif") no-repeat right 12px; padding: 8px 4px 10px 4px; color:#707070; letter-spacing:-1px;}
+.board thead th.last {background:url("/base/imgs/board/listLast.gif") no-repeat right 0;}
+.board td {border-bottom:1px solid #e9e8e8; padding:9px 5px 8px 5px; text-align:center; color:#464646; background:none !important;}
+.board .txt_left {padding-left: 5px; text-align: left;}
+.board .comment {font-size:11px; color:#D14900;}
+.board .td_left {text-align:left;}
+.board .title {text-align:left; font-weight: bold;}
+.board a {color:#464646;}
+.board a:hover {color:#000; text-decoration:underline;}
+
+/** board_view - 140629 */
+.board_view {}
+.board_view {border-collapse:collapse; width:100%; background:url("/base/imgs/board/listThead.gif") repeat-x 0 0; border-bottom:1px solid #96afce;}
+.board_view th {color:#707070; border-bottom:1px solid #e5e5e5; padding:9px 5px 8px 5px;}
+.board_view td {border-bottom:1px solid #e5e5e5; padding: 5px 10px 4px 10px; background:none; text-align:center;}
+.board_view .last {border:none; padding: 9px 5px 12px 5px !important; background:url("/base/imgs/board/listLast.gif") no-repeat right 0;}
+.board_view .title {border:none; padding: 7px 4px 8px 4px !important;}
+.board_view .gray {background-color:#f7f7f7;}
+.board_view .txt_left {padding-left: 5px; text-align: left;}
+.board_view .substance {padding:10px !important; overflow:hidden; width: 730px; white-space: normal; text-align: left;}
+.board_view .inText {background:url("/base/imgs/board/inText.gif") no-repeat 0 0; border:none; border-right:1px solid #dfdfdf; padding:2px; height:17px; font-size:1em;}
+.board_view .next_text {display:block; color: #707070 !important; background:url("/base/imgs/board/ico_next_text.gif") no-repeat 22px 6px; padding:0 0 0 13px;}
+.board_view .prev_text {display:block; color: #707070 !important; background:url("/base/imgs/board/ico_prev_text.gif") no-repeat 22px 6px; padding:0 0 0 13px;}
+
+/** board_view_t1 - 140629 */
+.board_view_t1 {}
+.board_view_t1 {border-collapse:collapse; width:100%; background:url("/base/imgs/board/listThead.gif") repeat-x 0 0; border-bottom:1px solid #96afce;}
+.board_view_t1 th {color:#707070; border-bottom:1px solid #e5e5e5; padding:9px 5px 8px 5px;}
+.board_view_t1 td {border-bottom:1px solid #e5e5e5; padding: 9px 10px 8px 10px; background:none; text-align: left;}
+.board_view_t1 .last {border:none; padding: 9px 5px 12px 5px !important; background:url("/base/imgs/board/listLast.gif") no-repeat right 0;}
+.board_view_t1 .gray {background-color:#f7f7f7;}
+.board_view_t1 .substance {padding:10px !important; overflow:hidden; width: 730px; white-space: normal; text-align: left;}
+.board_view_t1 .txt_center {text-align: center; padding: 9px 0;}
+
+/** board_view_t2 - 140629 */
+.board_view_t2 {}
+.board_view_t2 {border-collapse:collapse; width:100%; background:url("/base/imgs/board/listThead.gif") repeat-x 0 0; border-bottom:1px solid #96afce;}
+.board_view_t2 th {color:#707070; border-bottom:1px solid #e5e5e5; padding:9px 5px 8px 5px;}
+.board_view_t2 td {border-bottom:1px solid #e5e5e5; padding: 9px 10px 8px 10px; background:none; text-align: center;}
+.board_view_t2 .last {border:none; padding: 9px 5px 12px 5px !important; background:url("/base/imgs/board/listLast.gif") no-repeat right 0;}
+.board_view_t2 .gray {background-color:#f7f7f7;}
+.board_view_t2 .substance {padding:10px !important; overflow:hidden; white-space: normal; text-align: left;}
+.board_view_t2 .txt_center {text-align: center; padding: 9px 0;}
+
+/** board_insert - 140629 */
+.board_insert {}
+.board_insert {border-collapse:collapse; width:100%; background:url("/base/imgs/board/listThead.gif") repeat-x 0 0; border-bottom:1px solid #b4b4b4;}
+.board_insert th {color:#707070; border-bottom:1px solid #e5e5e5; padding:9px 5px 8px 5px;}
+.board_insert td {border-bottom:1px solid #e5e5e5; padding:9px 10px 8px 10px; background:none; text-align: left; }
+.board_insert .substance {padding:15px !important;}
+.board_insert .tbl2Area {border:1px solid #CFCFCF; height:100px; width:100%; font-size:12px;}
+.board_insert .first {}
+.board_insert .last {border:none; padding:9px 5px 12px 5px !important; background:url("/base/imgs/board/listLast.gif") no-repeat right 0;}
+.board_insert .title {border:none; padding:7px 4px 7px 4px !important;}
+.board_insert .view_title {color:#565656; font-size:12px;}
+.board_insert .gray {background-color:#f8f8f8;}
+.board_insert .inText {background:url("/base/imgs/board/inText.gif") no-repeat 0 0; border:none; border-right:1px solid #dfdfdf; padding:2px; height:17px; font-size:1em;}
+
+/* 게시판 : 갤러리 */
+.board_gallery {border-collapse:collapse; width:100%;border-top:2px solid #137cbd; border-bottom:1px solid #d5d5d5;}
+.board_gallery td {border-bottom:1px solid #d5d5d5; padding:9px 10px 8px 38px; text-align:center; color:#464646; background:none !important; font-size:12px;}
+.board_gallery .comment {font-size:11px; color:#D14900;}
+.board_gallery a {color:#464646;}
+.board_gallery a:hover {color:#03559a; text-decoration:underline;}
+.board_gallery .g_type {width: 188px; float: left; margin:10px 18px; display:inline-block;}
+.board_gallery .g_type .g_con {width:188px; height:128px; background:url("/base/bbs/board_blue_skin/gallery_td_bg.gif") no-repeat 0 0px;}
+.board_gallery .g_type .g_con img {padding-top:4px;}
+.board_gallery .g_type .g_text {text-align:center; padding-top:8px; line-height:16px; height:33px; overflow:hidden;}
+
+/* board */
+.board_photo {border-collapse:collapse; width:100%; border-bottom:2px solid #e5e5e5; border-top:2px solid #1598d2;}
+.board_photo td {border-bottom:1px solid #e9e8e8; padding:9px 5px 8px 5px; text-align:center; color:#464646; background:none !important;}
+.board_photo .comment {font-size:11px; color:#D14900;}
+.board_photo .td_left {text-align:left;}
+.board_photo a {color:#464646;}
+.board_photo a:hover {color:#03559a; text-decoration:underline;}
+
+/* gallery */
+.g_type {width: 188px; float: left; margin:10px 14px; display:inline-block;}
+.g_type .g_con {width:188px; height:128px; background:url("/base/imgs/board/gallery_td_bg.gif") no-repeat 0 0px;}
+.g_type .g_con img {padding-top:4px;}
+.g_type .g_text {text-align:center; padding-top:8px;}
+
+
+
+/* board_write */
+.board_write {border-collapse:collapse; width:100%; background:url("/base/imgs/board/listThead.gif") repeat-x 0 0; border-bottom:1px solid #96afce;}
+.board_write th {background:url("/base/imgs/board/thead_line_.gif") no-repeat right 50%; font-size:0.95em; color:#707070; font-family:dotum; border-bottom:1px solid #e5e5e5; padding:6px 5px 5px 5px;}
+.board_write td {border-bottom:1px solid #e5e5e5; padding:6px 10px 5px 10px; background:none;}
+.board_write .last {border:none; padding:7px 10px 7px 10px !important; background:url("/base/imgs/board/listLast.gif") no-repeat right 0;}
+.board_write .title {border:none; padding:7px 4px 7px 4px !important;}
+.board_write .gray {background-color:#f7f7f7;}
+.board_write .substance {padding:15px !important;}
+.board_write .inText {background:url("/base/imgs/board/inText.gif") no-repeat 0 0; border:none; border-right:1px solid #dfdfdf; padding:2px; height:15px; font-size:1em;}
+
+/* brdSearch */
+.brdSearch {position:relative; background-color:#f7f7f7; height:45px; border:1px solid #e5e5e5;}
+.brdSearch .selline {position:absolute; left:122px; top:13px; margin:0; padding:0; height:19px; width:80px;}
+.brdSearch .inText {position:absolute; left:205px; top:13px; background:url("/base/imgs/board/inText.gif") no-repeat 0 0; border:none; border-right:1px solid #dfdfdf; padding:2px; width:295px; height:15px; font-family:dotum; color:#5e5e5e;}
+.brdSearch .btn_pack3.gray {position:absolute; left:508px; top:13px;}
+
+.fileicon_ok {position:relative; background:url("/base/imgs/board/file_icon.gif") no-repeat 0 top; width:13px; height:13px;}
+.fileicon_cancel {position:relative; background:url("/base/imgs/board/file_icon.gif") no-repeat 0 bottom; width:13px; height:13px;}
+
+/* 게시판 안내 디자인 */
+.board_note {background:url("/base/imgs/board/note_bg.gif") no-repeat 0 0;}
+.board_note .noteIn {background:url("/base/imgs/board/note_bg.gif") no-repeat 0 bottom; padding:15px 16px;}
+
+/* 게시판 버튼 정렬 - 140617 */
+.board_btn_align {text-align:right; margin-top:10px;}
+
+/* 신규보드 CSS - 140607 */
+.board_book {background:url("/base/imgs/board/cri_report_con_bg2.gif")repeat-y 0 2px; border-bottom:1px solid #b4b4b4; border-collapse:collapse; border-top:2px solid #276db2; position:relative; width:100%;}
+.board_book td {color:#565656; height:153px; padding:18px 0 0; vertical-align:top; width:370px;}
+.board_book .cri_report_con .report_list {float: left; position: relative;}
+.board_book .cri_report_con .report_list h4 {background:url("/base/imgs/board/board_book_line.gif")repeat-x 0 bottom; font-size:13px; font-weight:normal; line-height:18px; padding:7px 0 8px 2px; position:relative; width:215px !important;}
+.board_book .cri_report_con .report_img {float:left; padding:0 0 0 20px; width:115px;}
+.board_book .cri_report_con .report_list ul {padding-top:6px;}
+.board_book .cri_report_con .report_list ul span {background:url("/base/imgs/board/borad_book_span.gif")no-repeat 2px 5px; color:#8a8989; display:inline-block; font-size: 12px; padding: 0 0 0 8px; width:48px;}
+.board_book .cri_report_con .report_list li {color:#717171; height:20px; line-height:20px; width:217px;}
+.cri_report_con {position:relative; width:382px !important;}
+.cri_report_con .report_img img {background: url("/base/imgs/board/report_img_bg.gif")no-repeat scroll 0 0; padding: 1px 5px 10px 1px;}
+.cri_report_con .report_list .report_btn {left:2px; position:absolute; top:104px;}
+
+/* teacher - 140629 */
+table.teacher {border-collapse:collapse; width:100%; border-top:2px solid #7bb56b; border-bottom:1px solid #7bb56b; font-family:Dotum,Sans-serif; color:#4b4b4b;}
+table.teacher thead th {background:#eff7ed url("/background/imgs/template/table_thead_bg.gif") repeat-x 0 0; color:#1a6271; padding:6px 8px 4px 8px; border:1px solid #bdcdb6; border-right:none;}
+table.teacher tbody th {background:#f8f9f9; padding:6px 8px 4px 8px; border-top:1px solid #c6d1c1; font-weight:normal; text-align:center;}
+table.teacher tbody th.br {background:#f8f9f9; padding:6px 8px 4px 8px; border-left:1px solid #c6d1c1; font-weight:normal; text-align:center;}
+table.teacher tbody th.th_col {background:#eff7ed;}
+table.teacher tbody .btm {border-bottom:1px solid #7bb56b;}
+table.teacher tbody td {padding:6px 7px 4px 7px; border:1px solid #c6d1c1; border-right:none; border-bottom:none; line-height:17px;}
+table.teacher tfoot th {background:#f8f9f9; padding:6px 8px 4px 8px; border-top:1px solid #7bb56b; font-weight:normal; text-align:center;}
+table.teacher tfoot td {padding:6px 7px 4px 7px; border-left:1px solid #c6d1c1; border-top:1px solid #7bb56b; line-height:17px;}
+table.teacher .top_th {padding:8px 8px 4px 8px; border-top:1px solid #c9d8e5;}
+table.teacher .top_th_ {padding:8px 8px 4px 8px; border-left:1px solid #bdcdb6;}
+table.teacher .top {padding:8px 8px 4px 8px; border-top:1px solid #c9d8e5;}
+table.teacher .top_ {background:#f8f9f9; padding:8px 8px 4px 8px; border-left:1px solid #bdcdb6;}
+table.teacher .gray {background:#f8f9f9; padding:6px 8px 4px 8px; border-top:1px solid #c6d1c1; font-weight:normal; text-align:center;}
+table.teacher .brd_none {border-left:none !important;}
+table.teacher .td_center {text-align:center !important;}
+table.teacher .td_left {text-align:left !important;}
+table.teacher tbody th.brd_left {border-left:1px solid #c6d1c1;}
+table.teacher .smalltxt {font-size:11px; font-family:"dotum","돋움"; color:#7e7e7e; line-height:20px; letter-spacing:-1px;}
+

@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@font-face {
+	font-family:"NG";
+	src: url('../font/NanumGothic.eot'); /* IE9 */
+	src: url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+	src: url('../font/NanumGothic.woff') format('woff'); /* Chrome, Safari, Android, iOS */
+	src: url('../font/NanumGothic.ttf') format('truetype'); 
+	src: url('../font/NanumGothic.svg#NanumGothic') format('svg'); /* 구형 iOS */
+	src: local('나눔 고딕'), url('../font/NanumGothic.woff') format('woff');
+}
+
+@font-face {
+	font-family:"NGB";
+	src: url('../font/NanumGothicBold.eot');
+	src: url('../font/NanumGothicBold.eot?#iefix') format('embedded-opentype');
+	src: url('../font/NanumGothicBold.woff') format('woff');
+	src: url('../font/NanumGothicBold.ttf') format('truetype'); 
+	src: url('../font/NanumGothicBold.svg#NanumGothic') format('svg');
+	src: local('나눔 고딕'), url('../font/NanumGothicBold.woff') format('woff');
+}
+
+@font-face{
+	font-family:"Daum_Regular";
+	font-style:normal;
+	font-weight:normal;
+	src: url('../font/Daum_Regular.eot'); 
+	src: url('../font/Daum_Regular.eot?#iefix') format('embedded-opentype');
+	src: url('../font/Daum_Regular.woff') format('woff');
+	src: url('../font/Daum_Regular.ttf') format('truetype'); 
+	src: url('../font/Daum_Regular.svg#NanumGothic') format('svg');
+	src: local('Daum_Regular'), url('../font/Daum_Regular.woff') format('woff');
+}
+
+@font-face{
+	font-family:"Daum_SemiBold";
+	font-style:normal;
+	font-weight:normal;
+	src: url('../font/Daum_SemiBold.eot');
+	src: url('../font/Daum_SemiBold.eot?#iefix') format('embedded-opentype');
+	src: url('../font/Daum_SemiBold.woff') format('woff');
+	src: url('../font/Daum_SemiBold.ttf') format('truetype');
+	src: url('../font/Daum_SemiBold.svg#NanumGothic') format('svg');
+	src: local('Daum_SemiBold'), url('../font/Daum_SemiBold.woff') format('woff');
+}

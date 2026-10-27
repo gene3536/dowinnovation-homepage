@@ -1,0 +1,128 @@
+@charset "utf-8"; 
+
+button{border:0;cursor:pointer;}
+input, select{vertical-align:middle; background:#fff; border:1px solid #e1e1e1;  color:#000; letter-spacing:-0.6px; border-radius:0; font-size:16px}
+input{padding:8px 20px;}
+
+.board-wrap {font-family: 'Montserrat', sans-serif;}
+.board-wrap button {background: inherit;}
+
+.board-top {font-size: 0; padding: 50px 0 25px; position: relative;}
+.board-top::after {display: block; content: ""; clear: both;}
+
+.board-count {float: left; font-size: 0; min-height: 50px; line-height: 50px;}
+.board-count .text-total {display: inline-block; margin-right: 35px;}
+.board-count .text-page {display: inline-block;}
+.board-count p {display: inline-block; text-transform: uppercase; font-size: 15px; font-weight: 500; color: #222;}
+.board-count p:first-child {margin-right: 5px;}
+.board-count span {color: #ed5f00; font-weight: 700; vertical-align: baseline;}
+
+.board-search {float: right;}
+
+.search-select {display: inline-block; margin-right: 10px;}
+.search-select #select {padding: 12px; height: 50px; min-width: 160px; border-radius: 5px; -webkit-appearance: none; -moz-appearance: none; appearance : none; background:url('../images/common/board/board-select.png') no-repeat 90% 50%;}
+.search-select #select::-ms-expand {display: none;}
+
+.search-kwd {display: inline-block; position: relative;}
+.search-kwd #kwd {padding: 12px; height: 50px; border-radius: 5px; min-width: 300px;}
+.search-kwd #kwd::-ms-expand {display: none;}
+.search-kwd .search-btn {position: absolute; top: 50%; right: 15px; transform: translateY(-55%);}
+
+.board-list {border-top: 1px solid #222;}
+.board-list .board-item {border-bottom: 1px solid #e3e3e3; padding: 30px 40px 30px 20px; font-size: 15px; font-weight: 500; color: #222;}
+.board-list .board-item:hover {background: #f4f4f4;}
+.board-list .board-item:hover .title {transform: translateX(10px);}
+
+.board-item .num {display: inline-block; width: 60px; margin-right: 10px; text-align: center;}
+.board-title::after {display: block; content: ""; clear: both;}
+.board-title {display: inline-block; width: calc(100% - 75px); position: relative;}
+.board-title .title {display: inline-block; max-width: calc(100% - 400px); transition: 0.5s; padding-right: 10px; position: relative;}
+.board-title .title a.reply {padding-left: 80px;}
+.board-title .title a.reply::after {content: "답변"; padding: 5px 15px; border-radius: 30px; background: #3c3c3c; color: #fff; font-size: 14px; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+.board-title .title a {display: block; font-size: 18px; font-weight: 300; color: #666; line-height: 1.4;}
+.board-title .title a span {vertical-align: baseline; display: inline-block; max-height: 30px;}
+
+.board-title .title span.new::after {content: ""; width: 17px; height: 17px; background: url('../images/common/board/board-new.png') center no-repeat; position: absolute; top: 50%; left: 100%; transform: translateY(-50%);}
+.board-title .title span.lock::after {content: ""; width: 16px; height: 18px; background: url('../images/common/board/board-lock.png') center no-repeat; position: absolute; top: 50%; left: 100%; transform: translateY(-50%);}
+.board-title .title span.new.lock::after {content: ""; width: 16px; height: 18px; background: url('../images/common/board/board-lock.png') center no-repeat; position: absolute; top: 50%; left: 100%; transform: translateY(-50%);}
+.board-title .title span.new.lock::before  {content: ""; width: 17px; height: 17px; background: url('../images/common/board/board-new.png') center no-repeat; position: absolute; top: 50%; left: calc(100% + 22px); transform: translateY(-50%);}
+
+
+.board-title .board-info {display: inline-block; float: right; position: relative;}
+.board-info .writer {display: inline-block; margin-right: 50px; width: 70px; text-align: center; word-break: break-all;} 
+.board-info .date {display: inline-block; margin-right: 50px; width: 77px;}
+.board-info .view {display: inline-block; width: 47px; text-align: center;} 
+.board-title .board-info.attach::after {content: ""; width: 17px; height: 20px; background: url('../images/common/board/board-attach.png') center no-repeat; position: absolute; top: 50%; right: 330px; transform: translateY(-50%);}
+
+.board-bottom {padding: 75px 0 150px; text-align: center;}
+
+.board-pagelist {display: inline-block; font-size: 0; min-width: 60px; padding: 0 40px;}
+.board-pagelist li {display: inline-block; width: calc(20% - 10px);  margin: 0 5px;}
+.board-pagelist li a {display: block; font-size: 15px; font-weight: 500; color: #909090; padding: 10px 0; width: 35px; height: 35px; border-radius: 50%;}
+.board-pagelist li.on a {background: #f4f4f4; color: #222;}
+.board-pagelist li:hover a {background: #f4f4f4; color: #222;}
+
+.board-page-btn {display: inline-block;}
+.board-page-btn img {vertical-align: baseline;}
+.board-page-btn button {transition: 0.5s;}
+.board-page-btn button:first-child {margin-right: 35px;}
+.board-page-btn:first-child button:hover {transform: translateX(-10px);}
+.board-page-btn:last-child button:hover {transform: translateX(10px);}
+
+@media only screen and (max-width: 1024px) {
+    .board-list .board-item {padding: 30px 30px;}
+    .board-title .title {max-width: calc(100% - 350px);}
+    .board-info .writer, .board-info .date {margin-right: 20px;}
+    .board-title .board-info.attach::after {right: calc(100% + 30px);}
+}
+
+@media only screen and (max-width: 768px) {
+    .board-search, .board-count {display: block; width: 100%;}
+
+    .board-top {text-align: right; padding: 30px 0 0;}
+
+    .board-title .title {max-width: calc(100% - 50px); margin-bottom: 20px; font-size: 25px; font-weight: 500; color: #222;}
+    .board-title .title a {font-size: 25px; font-weight: 500; color: #222;}
+    .board-title .title a span {max-height: 80px;}
+
+    .board-title .title a.reply {padding-left: 0; padding-top: 20px;}
+    .board-title .title a.reply::after {top: 0; left: 0;}
+
+    .board-title .board-info {width: 100%; float: left; display: inline-block;}
+    .board-title .board-info.attach::after {right: 0;}
+
+    .board-info .writer, .board-info .date, .board-info .view {font-size: 18px; width: auto; color: #666; position: relative;}
+    .board-info .writer::after, .board-info .date::after, .board-info .view::after {content: ""; width: 1px; height: 15px; background: #d8d8d8; position: absolute; top: 0; left: calc(100% + 10px); transform: rotate(35deg);}
+
+}
+
+@media only screen and (max-width: 640px) {
+    .search-select {width: calc(30% - 10px);}
+    .search-select #select {min-width: 100%;}
+    .search-kwd {width: 70%;}
+    .search-kwd #kwd {min-width: 100%; max-width: 100%;}
+
+    .board-title .title a {font-size: 20px;}
+    .board-title .title a span {max-height: 60px;}
+    .board-info .writer, .board-info .date, .board-info .view {font-size: 14px; margin-right: 20px;}
+    .board-info .writer::after, .board-info .date::after, .board-info .view::after {left: calc(100% + 10px);}
+
+    .board-pagelist {padding: 0 20px;}
+    .board-page-btn button:first-child {margin-right: 15px;}
+}
+
+@media only screen and (max-width: 480px) {
+    .board-top {padding: 0;}
+    .search-kwd #kwd {font-size: 14px;}
+
+    .board-count p {font-size: 14px;}
+
+    .board-list .board-item {padding: 30px 10px;}
+    .board-item .num {display: none;}
+    .board-title {width: 100%;}
+
+    .board-pagelist {display: none;}
+
+    .board-page-btn:first-child {float: left; padding-left: 20px;}
+    .board-page-btn:last-child {float: right; padding-right: 20px;}
+}

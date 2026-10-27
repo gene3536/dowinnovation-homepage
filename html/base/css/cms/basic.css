@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+
+/* Basic */
+* {padding:0; margin:0;}
+body { word-break:break-all; font-size:0.75em; line-height:1.5em; font-family:"NanumG","돋움",Dotum,Helvetica,AppleGothic,Sans-serif; color:#383d41; }
+li, dd {list-style: none;}
+caption, hr {display:none;}
+dd {text-align:justify;}
+img, fieldset {border:0px;}
+legend { font-size: 0; height: 0; overflow: hidden; position: absolute; visibility: hidden; width: 0; }
+
+A:link {color:#383d41; text-decoration:none;}
+A:visited {color:#383d41; text-decoration:none;}
+A:active {color: #383d41; text-decoration:none; }
+A:hover {color: #000; text-decoration:none; }
+
+/* Basic - clearfix */
+.clearfix:after {display:block; clear:both; content:"."; visibility:hidden; height:0;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+/* Basic - errorpage */
+#errorPage { margin:20px; padding:20px; border:1px solid; line-height:20px; display:block; }
+#errorPage span { font-size:20px; font-weight:bold; }
+
+/* Basic - etc */
+.clrBoth {clear: both; font-size: 1px; line-height: 1px;}
+.dplOn {display:block}
+.dplOff {display:none}
+
+.skip {position:absolute; overflow:hidden; height:0; width:0; font-size:0; visibility:hidden;}
+
+.brdline {border:1px #CCC solid; margin-left:5px}
+.inpline {border:1px #CCC solid; padding:2px 3px; height:19px; vertical-align:middle; ime-mode:inactive}
+.selline {border:1px #CCC solid; padding:2px; height:25px; vertical-align:middle;}
+.fileline {width:300px; margin:2px 0; height:20px; vertical-align:middle;}
+
+/* Basic - space */
+.space05 {height:5px}
+.space10 {height:10px}
+.space15 {height:15px}
+.space20 {height:20px}
+
+.highlight {font-weight:bold; background-color:#ff0;}

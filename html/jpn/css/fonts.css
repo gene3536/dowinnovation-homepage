@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "NEXON Lv2 Gothic";
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/NEXONLv2GothicLight.eot');
+    src: url('../fonts/NEXONLv2GothicLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NEXONLv2GothicLight.woff2') format('woff2'),
+        url('../fonts/NEXONLv2GothicLight.woff') format('woff'),
+        url('../fonts/NEXONLv2GothicLight.ttf') format('truetype'),
+        url('../fonts/NEXONLv2GothicLight.svg#NEXONLv2GothicLight') format('svg');
+}
+
+@font-face {
+    font-family: "NEXON Lv2 Gothic";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/NEXONLv2GothicRegular.eot');
+    src: url('../fonts/NEXONLv2GothicRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NEXONLv2GothicRegular.woff2') format('woff2'),
+        url('../fonts/NEXONLv2GothicRegular.woff') format('woff'),
+        url('../fonts/NEXONLv2GothicRegular.ttf') format('truetype'),
+        url('../fonts/NEXONLv2GothicRegular.svg#NEXONLv2GothicRegular') format('svg');
+}
+
+@font-face {
+    font-family: "NEXON Lv2 Gothic";
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/NEXONLv2GothicMedium.eot');
+    src: url('../fonts/NEXONLv2GothicMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NEXONLv2GothicMedium.woff2') format('woff2'),
+        url('../fonts/NEXONLv2GothicMedium.woff') format('woff'),
+        url('../fonts/NEXONLv2GothicMedium.ttf') format('truetype'),
+        url('../fonts/NEXONLv2GothicMedium.svg#NEXONLv2GothicMedium') format('svg');
+}
+
+@font-face {
+    font-family: "NEXON Lv2 Gothic";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/NEXONLv2GothicBold.eot');
+    src: url('../fonts/NEXONLv2GothicBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NEXONLv2GothicBold.woff2') format('woff2'),
+        url('../fonts/NEXONLv2GothicBold.woff') format('woff'),
+        url('../fonts/NEXONLv2GothicBold.ttf') format('truetype'),
+        url('../fonts/NEXONLv2GothicBold.svg#NEXONLv2GothicBold') format('svg');
+}

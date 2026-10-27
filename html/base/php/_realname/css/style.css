@@ -1,0 +1,47 @@
+/****************************************************
+	수정일 : 2010-01-25 
+	작성자 : sam
+	특이사항 : html문서에있는 css 문서분류작업
+*****************************************************/
+
+/* 본인확인 */
+.member_fbox{width:624px; height:27px; line-height:27px; text-indent:20px; color:#666666; background:#f8f8f8;}
+.member_btn dt{display:none;}
+.member_btn dd{margin:0px; padding:0px;}
+.member_btn dd ul{overflow:hidden; clear:both;}
+.member_btn dd ul li{float:left;}
+.member_tip{margin:10px 0px 0px 0px; padding:0px; padding-left:18px; line-height:18px; background:url(/_prog/_member/img/member_tip.gif) no-repeat 5px 3px;}
+.member_ipin_text{width:580px; padding:10px 20px; margin:0px 0px 20px 0px; background:#f9f9f9; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; line-height:18px;}
+.member_ipin_text p{margin-top:5px;font-size:11px;letter-spacing:-1px;}
+#member_ipin_tab1{position:relative; width:624px; height:120px; border-bottom:2px solid #e0e0e0; background:url(/_prog/_member/img/member_ipin_tab_bg.gif) repeat-x left top; overflow:hidden; clear:both;}
+#member_ipin_tab1 ul li div{line-height:18px; width:628px;}
+#member_ipin_tab1 ul li p.tip_btn{margin:0px; padding:0px;}
+#member_ipin_tab1 ul li div p{margin-top:10px;}
+#member_ipin_tab2{position:relative; width:624px; height:120px; border-bottom:2px solid #e0e0e0; background:url(/_prog/_member/img/member_ipin_tab_bg.gif) repeat-x left top; overflow:hidden; clear:both;}
+#member_ipin_tab2 ul li div{line-height:18px; width:628px;}
+#member_ipin_tab2 ul li p.tip_btn{margin:0px; padding:0px;}
+#member_ipin_tab2 ul li div p{margin-top:10px;}
+.member_ipin_list{margin:20px 0 0 0; padding:0; background:url(/_prog/_member/img/member_top_bg.gif) repeat-x left bottom;}
+.member_ipin_list dt{display:none;}
+.member_ipin_list dd{margin:0px; padding:0 0 10px 0;}
+.member_ipin_list dd ul li{width:600px; padding-left:20px; background:url(/_prog/_member/img/member_ipin_bul.gif) no-repeat 10px 3px;}
+
+.member_ipin_text2{width:580px; padding:10px 20px; margin:0px 0px 20px 0px; background:#f9f9f9; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7; line-height:18px;}
+.member_ipin_text2 p{margin:0px; padding:0px; line-height:18px;}
+.member_ipin_text2 strong.point_1{color:#4da9cd; text-decoration:underline;}
+.member_ipin_text2 strong.point_2{color:#ee8644;}
+.member_dot{width:100%; height:1px; line-height:0px; font-size:0px; background:url(/_prog/_member/img/member_top_bg.gif) repeat-x left top; margin-top:10px;}
+.member_ok_box{width:470px; height:193px; padding-left:170px; background:url(/_prog/_member/img/member_ok_bg.gif) no-repeat left top;}
+.member_ok_box p{margin:0px; padding:0px; line-height:18px;}
+.member_ok_box p strong.point_3{color:#d2552f;}
+.h5_tag {position:absolute;width:624px;margin:-10px 0 0 0;padding:0;text-align:right;}
+
+.Adult{display:block; float:left;width:292px; height:132px;}
+.Adult .Adult_tit{width:292px; height:9px; background:url(/_prog/_member/img/adult_tit.gif) no-repeat left top;}
+.Adult .Adult_Bg{width:292px; height:auto; overflow:hidden; clear:both; background:url(/_prog/_member/img/adult_bg.gif) repeat-y left top;}
+.Adult .Adult_Bg p{width:262px;font-size:11px; color:#666; padding:0 15px; letter-spacing:-1px; line-height:16px;}
+.Adult .Adult_Bg p.blue_tit{padding-bottom:8px; font-size:12px;  color:#2a517d;}
+.Adult .Adult_Bg p.ger_tit{padding-bottom:8px; font-size:12px;  color:#6a2725;}
+.Adult .Adult_Bottom{width:292px; height:13px; background:url(/_prog/_member/img/adult_bottom.gif) no-repeat left top;}
+.blue_tit{padding-left:15px; padding-bottom:8px;  color:#2875bd;}
+.line-Adult{border-bottom:1px solid #dddddd;}

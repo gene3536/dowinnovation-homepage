@@ -1,0 +1,34 @@
+# 서버에서 생성되는 업로드 및 임시 데이터
+/uploads/
+/tmp/
+/html/_my/tmp/
+# 실제 디렉터리일 때만 제외한다. uploads를 가리키는 심볼릭 링크는 보존한다.
+/html/upload/
+# 비밀값을 별도 설정으로 분리하기 전까지 운영 설정 파일은 제외한다.
+/system/config/config.php
+/system/config/config_lite.php
+/system/config/database-mysql.php
+/html/_my/config.inc.php
+/html/base/php/_realname/korea/input.php
+/html/base/php/_realname/korea/backup/certnc_main.php
+/html/base/php/_realname/korea/backup/kor_input.php
+# 프로젝트 루트의 DB 백업 파일
+/*.sql
+/*.sql.gz
+/*.sql.bz2
+/*.sql.xz
+/*.sql.zip
+# 환경 설정, 셸 기록 및 로컬 도구 데이터
+.env
+.env.*
+.bash_history
+.DS_Store
+/.omx/
+# 로그 및 편집 중 생성되는 임시 파일
+*.log
+*.bak
+*.orig
+*.rej
+*.swp
+*~
+

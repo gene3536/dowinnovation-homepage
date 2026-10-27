@@ -1,0 +1,7 @@
+<?php	
+
+	$memberClass->memberLogout();
+	exit;
+
+
+?>

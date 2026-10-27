@@ -1,0 +1,118 @@
+<?php
+	require_once $dir2.'list.header.php';
+?>
+
+<div id="cenCont_in">
+	<?php echo $cmsClass -> getSiteList($menukey, $mod, $scode); ?>
+	
+	<div class="brdlist_head">
+		<div class="searchBoxType1 clearfix">
+			<div class="fl" style="padding-top: 5px;">&bull;&nbsp;전체 <b><?php echo $paging['total_record']?></b> - [<?php echo $page?>/<?php echo $paging['realendofpage']?>] 페이지</div>
+	        <div class="fr">
+	            <?php echo $coreClass -> searchBoxType3($menukey, $mod, $scode, $search, $kwd)?>        
+	        </div>
+		</div>
+	</div>
+	
+    <div class="brdlist_content">
+		<table class="tbl_list1" border="1" cellspacing="0" summary="통합콘텐츠데이터 목록">
+        <caption>통합콘텐츠데이터 목록</caption>
+        <colgroup>
+        	<col width="6%" />
+            <col />
+            <col width="16%" />
+            <col width="6%" />
+			<col width="6%" />
+        	<col width="14%" />
+        	<col width="14%" />
+        	<col width="10%" />
+        </colgroup>
+        <thead>
+        	<tr>
+				<th><b>번호</b></th>
+				<th><b>제목</b></th>
+				<th><b>사이트</b></th>
+				<th><b>활성여부</b></th>
+				<th><b>유형</b></th>
+				<th><b>게시기간</b></th>
+				<th><b>등록일 / 수정일</b></th>
+				<th><b>처리</b></th>
+            </tr>
+        </thead>
+        
+        <tbody>
+			<?php if($paging_result < 1) { ?>
+				<tr><td colspan="8">출력할 데이터가 없습니다.</td></tr>
+			<?php
+				} else {
+					$num = $paging['total_record'] - ($paging['page']-1) * $paging['numofrecord'];
+					while($row = $coreClass -> selectFetchArray($rs)) {
+			?>
+                <tr>
+   	                <td class="num"><?php echo $num?></td>
+					<td class="title"><a href="sub.php?menukey=<?php echo $menukey?>&mod=modify&no=<?php echo $row['ICD_NO']?><?php echo $var?>"><b><?php echo $row['ICD_TITLE']?></b></a></td>					
+                    <td>
+						<?php
+							if($row['ICD_SCODE'] == "00000000") {
+								echo "[전체]";
+							} else {
+								$where = "WHERE cms_info_code = '".$row['ICD_SCODE']."'";
+								$rows = $coreClass -> selectQueryArray(tbl_cms_info, $where, "", "", "");
+								echo "[".$rows['CMS_INFO_TITLE']."]";
+							}
+						?>
+                    </td>
+                    <td>
+						<?php if($row['ICD_VISIBLE'] == "Y") {
+								echo '<a href="sub.php?menukey='.$menukey.'&mod=process&act=visible&no='.$row['ICD_NO'].'&token='.site_config_token.$listVar.'" style="color:#00f">[활성]</a>';
+							} else { 
+								echo '<a href="sub.php?menukey='.$menukey.'&mod=process&act=visible&no='.$row['ICD_NO'].'&token='.site_config_token.$listVar.'" style="color:#f00">[비활성]</a>';
+							}
+						?>
+                    </td>
+					<td>
+					<?php 
+						if($row['ICD_TYPE'] == "1") echo "A유형";
+						else if($row['ICD_TYPE'] == "2") echo "B유형";
+						else if($row['ICD_TYPE'] == "3") echo "C유형";
+					?>
+                    </td>
+					<td class="date">
+						<?php
+							if(strtotime($row['ICD_SDATE']) <= mktime() && strtotime($row['ICD_EDATE']) >= mktime()) {
+								echo '<span style="color:#00f">';
+							} else {
+								echo '<span style="color:#f00">';
+							}
+							echo date("Y/m/d H:i", strtotime($row['ICD_SDATE']))."<br />";
+							echo date("Y/m/d H:i", strtotime($row['ICD_EDATE']));
+							echo '</span>';
+						?>
+					</td>
+					<td class="date">
+						<?php echo date("Y/m/d H:i:s",strtotime($row['ICD_REGDATE']))?><br />
+						<?php echo date("Y/m/d H:i:s",strtotime($row['ICD_MODDATE']))?>
+					</td>
+					<td>
+                    <a href="sub.php?menukey=<?php echo $menukey?>&mod=modify&no=<?php echo $row['ICD_NO']?><?php echo $listVar?>">수정</a> | 
+					<a href="sub.php?menukey=<?php echo $menukey?>&mod=process&act=delete&no=<?php echo $row['ICD_NO']?>&token=<?php echo site_config_token?><?php echo $listVar?>" onClick="if(confirm('삭제합니까?\n\n내용이 모두 삭제됩니다.')) location.href=this.href; return false">삭제</a></td>
+				</tr>
+			<?php
+					$num--;
+					}//end of while
+				}//end of if
+			?>
+        </tbody>
+		</table>
+	</div>
+    
+	<div class="brdlist_footer">
+        <div class="bt">
+            <?php if(!empty($search)){ ?>
+                <a href="sub.php?menukey=<?php echo $menukey?>&mod=list" class="btn_big"><span>전체목록</span></a>
+            <?php } ?>
+			<a href="sub.php?menukey=<?php echo $menukey?>&mod=insert<?php echo $listVar?>" class="btn_big strong"><strong>등록</strong></a>
+        </div>
+       	<?php echo $coreClass -> pagingUi(1, $paging, $menukey, $mod, $page, $search, $kwd, $cate, $no, $id, $scode, $codes)?>
+    </div>
+</div>    

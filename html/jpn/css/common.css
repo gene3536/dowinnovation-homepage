@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* ===================================
+	공통클래스
+ =================================== */
+body { background-color:#fff; }
+
+/***** Align *****/
+.alignL {text-align:left !important;}
+.alignR {text-align:right !important;}
+.alignC {text-align:center !important;}
+.valignM {vertical-align:middle !important;}
+.valignT {vertical-align:top !important;}
+.valignB {vertical-align:bottom !important;}
+
+.floatL {float:left !important;}
+.floatR {float:right !important;}
+
+
+/***** width *****/
+.wdAuto {width:auto !important;}
+
+.wdP10 {width:10% !important;}
+.wdP20 {width:20% !important;}
+.wdP30 {width:30% !important;}
+.wdP40 {width:40% !important;}
+.wdP50 {width:50% !important;}
+.wdP60 {width:60% !important;}
+.wdP70 {width:70% !important;}
+.wdP80 {width:80% !important;}
+.wdP90 {width:90% !important;}
+.wdP95 {width:95% !important;}
+.wdP100 {width:100% !important;}
+
+/*Border*/
+.BD {border:1px solid #ccc !important;}
+.BDT {border-top:1px solid #ccc !important;}
+.BDR {border-right:1px solid #ccc !important;}
+.BDB {border-bottom:1px solid #ccc !important;}
+.BDL {border-left:1px solid #ccc !important;}
+
+/*Margin*/
+.MAT_1 {margin-top:-1px !important;}
+.MAT0 {margin-top:0 !important;}
+.MAT-XXL {margin-top:160px !important;}
+.MAT-XL {margin-top:120px !important;}
+.MAT-L {margin-top:80px !important;}
+.MAT-M {margin-top:60px !important;}
+.MAT-S {margin-top:40px !important;}
+.MAT-XS {margin-top:20px !important;}
+.MAT-XXS {margin-top:10px !important;}
+
+
+@media all and (max-width:1024px){
+	/*Margin*/
+	.MAT-XXL {margin-top:140px !important;}
+	.MAT-XL {margin-top:100px !important;}
+	.MAT-L {margin-top:60px !important;}
+	.MAT-M {margin-top:40px !important;}
+	.MAT-S {margin-top:30px !important;}
+	.MAT-XS {margin-top:15px !important;}
+	.MAT-XXS {margin-top:5px !important;}
+}
+
+
+@media all and (max-width:768px){
+	/*Margin*/
+	.MAT-XXL {margin-top:100px !important;}
+	.MAT-XL {margin-top:80px !important;}
+	.MAT-L {margin-top:50px !important;}
+	.MAT-M {margin-top:30px !important;}
+	.MAT-S {margin-top:10px !important;}
+	.MAT-XS {margin-top:5px !important;}
+}
+
+
+@media only screen and (min-width: 769px) {
+	.pc {display:block !important;}
+	.mo {display:none !important;}
+}
+
+@media only screen and (max-width: 768px) {
+	.pc {display:none !important;}
+	.mo {display:block !important;}
+}
+
+.color1 {color:#28b0e5 !important;}
+.color2 {color:#8ec54a !important;}

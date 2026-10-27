@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900'); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+* {outline:0 ;}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, input, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: middle;
+    box-sizing:border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table {width: 100%;	border-collapse: collapse; border-spacing: 0;}
+
+img,fieldset{border: 0;}
+img {max-width:100%; height:auto;}
+
+address,cite,code,em{font-style:inherit;font-weight:inherit;}
+label,img,input,select,textarea,button{vertical-align:middle; margin:0; padding:0;}
+.hide,caption,legend{line-height:0;font-size:0;overflow:hidden;}
+table caption, hr{display:none;}
+
+
+body, input, textarea, select, button {font-family: 'Montserrat', 'Noto Sans JP', 'Noto Sans KR','Malgun Gothic','돋움', dotum,sans-serif; font-size:16px; color: #666; font-weight: 400; word-break:keep-all;}
+@media only screen and (max-width: 768px) {
+	body, input, textarea, select, button {font-size:14px;}
+}
+
+
+
+input[type=password] {font-family: 'Noto Sans JP', 'Noto Sans KR','Malgun Gothic','돋움',dotum, sans-serif;}
+select,
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=email],
+input[type=image],
+textarea {border-radius:0;}
+
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=email],
+textarea {-webkit-appearance:none;-moz-appearance:none;appearance:none; outline:none;}
+
+button,
+input[type=checkbox],
+input[type=radio],
+input[type=submit],
+input[type=image] {cursor:pointer; outline:none;}
+
+/***** placeholder *****/
+input::-moz-placeholder {color: #999; opacity: 1; }
+input:-ms-input-placeholder {color: #999;}
+input::-webkit-input-placeholder {color: #999; }
+
+.hac-list-top input::-moz-placeholder {color: #fff; opacity: 1;}
+.hac-list-top input:-ms-input-placeholder {color: #fff;}
+.hac-list-top input::-webkit-input-placeholder {color: #fff; }
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder { color:transparent;}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder { color:transparent;}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {color:transparent;}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {color:transparent;}
+
+
+
+
+
+a {background-color:transparent; text-decoration:none; color:#666;}
+a:hover {text-decoration:none; color:#222;}
+
+
+a[href^='tel'] {pointer-events:none; cursor:default;}
+@media (max-width: 1023px) {a[href^='tel'] {pointer-events:auto;}}
+
+
+
+/* Skip */
+.skip{position: absolute; width: 100%; font-size: 1.15em;top: -10.5em;left: 0;z-index: 99999;}
+.skip a:focus, .skip a:active {display:block;position: absolute; padding-top: 0.5em; width: 100%; height: 2em; top: 10.5em; z-index: 999; text-align: center;color:#fff; background: #ff0000; overflow: visible; clip: unset;}
+
+
+.hidden { overflow: hidden; position: absolute; width: 0; height: 0; }
+
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {content: " ";display: table;}
+.clearfix:after {clear: both !important;}
+.clear {clear:both !important;}
+.clear:before,
+.clear:after{content:''; display:block; clear:both;}
+
+/* dimmed */
+.dimmed {position:fixed;z-index:300; top:0;right:0;bottom:0;left:0;width:100%;}
+.dimmed.opa50 {background-color:rgba(0, 0, 0, .5);}
+
+/*윗첨자/아랫첨자*/
+sub {font-size:0.6em; line-height:1; vertical-align: baseline;}
+sup {font-size:0.6em; line-height:1; vertical-align: top;}

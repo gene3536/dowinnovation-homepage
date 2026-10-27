@@ -1,0 +1,1 @@
+<iframe src="/server-status" style="width:920px; height:880px; padding:0; border:1px solid #aaa" scrolling="no" frameborder="0" title="서버 스테이터스"></iframe>

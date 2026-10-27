@@ -1,0 +1,111 @@
+@charset "utf-8";
+@media all and (min-width:320px) and (max-width:640px) { 	
+
+/* Head ************************************************************************************************************************************************************/
+#sear_head_w { position:relative; width:100%; min-width:320px; min-height:215px; z-index:990; background-color:#fafafa; border-top:4px solid #b8ab9e; }
+#sear_head_w #head { position:relative; width:100%; min-width:320px; margin:0 auto; }
+#sear_head_w #head h1 { position:absolute; width:210px; height:46px; top:30px; left:50%; margin-left:-105px; z-index:999; background:url("/home/images/layout/sear_logo.png") no-repeat left top; }
+#sear_head_w #head h1 a { width:210px; height:46px; display:block; }
+#sear_head_w #head .main_search { position:absolute; top:105px; left:5%; width:90%; margin-left:-0px; z-index:999;}
+#sear_head_w #head .main_search p.tit { display:none; margin:0px; padding:0px;  }
+#sear_head_w #head .main_search fieldset.top_sear { position:relative; float:left; border:0px; width:100%; height:35px; background-color:#fff; border:3px solid #a9825c; }
+#sear_head_w #head .main_search fieldset.top_sear select.sear1 { position:relative; float:left; width:25%; height:20px; font-size:13px; color:#666; padding:0 1%; margin:7px 1%; border:0px; }
+#sear_head_w #head .main_search fieldset.top_sear input.ts_in { position:relative; float:left; width:40%; height:30px; line-height:33px; font-size:13px; color:#aaa; padding:0 2%; border:0px; }
+#sear_head_w #head .main_search fieldset.top_sear button.btn_auto { position:relative; float:left; width:7%; height:18px; border:0px; margin:6px 1%; display:block; background:url("/home/images/layout/btn_sear_on.gif") no-repeat left top; }
+#sear_head_w #head .main_search fieldset.top_sear input.ts_btn { position:relative; float:right; width:18%; height:35px; font-weight:bold; line-height:35px; font-size:16px; color:#fff; text-align:center; border:0px; background-color:#a9825c; cursor:pointer; }
+#sear_head_w #head .main_search ul.autolist { position:absolute; top:55px; left:275px; width:281px; padding:15px 10px; background-color:#fff; border:1px solid #777; z-index:30; }
+#sear_head_w #head .main_search ul.autolist li { display:block; height:30px; line-height:30px; font-size:13px; color:#666; }
+#sear_head_w #head .main_search ul.autolist li span { font-size:13px; color:#a27243; font-weight:bold; }
+#sear_head_w #head .main_search ul.autolist li a,
+#sear_head_w #head .main_search ul.autolist li a:visited { display:block; height:30px; line-height:30px; font-size:13px; color:#666; padding:0px 10px; }
+#sear_head_w #head .main_search ul.autolist li a:hover,
+#sear_head_w #head .main_search ul.autolist li a:active { display:block; height:30px; line-height:30px; font-size:13px; color:#666; padding:0px 10px; background-color:#fafafa; }
+#sear_head_w #head .main_search .search_in { position:relative; float:left; width:95%; height:30px; margin:11px 0% 11px 0%; left:5%; }
+#sear_head_w #head .main_search .search_in input.check { position:relative; margin-top:9px; float:left; }
+#sear_head_w #head .main_search .search_in label.check_txt { position:relative; float:left; line-height:30px; font-size:13px; color:#444; padding:0 2%; border:0px; }
+#sear_head_w #head .main_search .search_in .btn_lnk01 { position:relative; float:left; height:30px; line-height:30px; font-size:13px; color:#fff; font-weight:bold; padding:0px 5%; margin-left:1%; background-color:#cf3244; }
+#sear_head_w #head .main_search .search_in .btn_lnk02 { position:relative; float:left; height:30px; line-height:30px; font-size:13px; color:#fff; font-weight:bold; padding:0px 5%; margin-left:1%; background-color:#a19e9f; }
+#sear_head_w #head .sear_more_w { position:absolute; top:215px; left:0%; margin-left:-0px; width:96%; min-width:320px; min-height:100px; padding:25px 2% 30px 2%; background-color:#fafafa; border-top:1px solid #ccc; border-bottom:1px solid #ccc; z-index:990; }
+#sear_head_w #head .sear_more_w .sm_title { position:relative; width:100%; line-height:18px; font-size:14px; color:#2f479c; font-weight:bold; }
+#sear_head_w #head .sear_more_w .btn_close { position:absolute; top:23px; right:2%; width:50px; height:26px; line-height:24px; text-align:center; background-color:#2f479c; }
+#sear_head_w #head .sear_more_w .btn_close a { font-size:13px; color:#fff; font-weight:bold; }
+#sear_head_w #head .sear_more_w form { margin-top:25px; }
+#sear_head_w #head .sear_more_w fieldset.sm_sear01 { position:relative; float:left; }
+#sear_head_w #head .sear_more_w fieldset.sm_sear01 legend.txt01 { position:relative; float:left; line-height:24px; font-size:13px; color:#222; font-weight:bold; }
+#sear_head_w #head .sear_more_w fieldset.sm_sear01 select.sm_sear01 { position:relative;float:left; width:60px; line-height:24px; font-size:13px; margin:0px 10px 0px 5px; border:1px solid #ccc; padding:4px;}
+#sear_head_w #head .sear_more_w fieldset.sm_sear02 { position:relative; float:left; }
+#sear_head_w #head .sear_more_w fieldset.sm_sear02 legend.txt01 { position:relative; float:left; line-height:24px; font-size:13px; color:#222; font-weight:bold; }
+#sear_head_w #head .sear_more_w fieldset.sm_sear02 select.sm_sear02 { position:relative;float:left; width:85px; line-height:24px; font-size:13px; margin:0px 10px 0px 5px; border:1px solid #ccc; padding:4px;}
+
+#sear_head_w #head .sear_more_w fieldset.sm_sear_radio { position:relative; float:left; margin-top:10px; }
+#sear_head_w #head .sear_more_w fieldset.sm_sear label.radio_w { position:relative; float:left; line-height:24px; margin-right:5px; }
+#sear_head_w #head .sear_more_w fieldset.sm_sear label.radio_w .sear_radio { line-height:24px; font-size:13px; color:#222; margin:5px; vertical-align:middle;}
+
+/* Content ************************************************************************************************************************************************************/
+/* Left Menu */
+.sear_con_w { position:relative; width:100%; min-width:320px; overflow:hidden; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }
+.sear_con_w .sear_lm_w { position:relative; width:100%; min-width:320px; z-index:2; }
+.sear_con_w .sear_lm_w .sear_lm { position:relative; width:100%; height:auto; min-height:800px; margin:0 auto; background:none; }
+.sear_con_w .sear_lm_w .sear_lm #sear_menu { position:relative; width:100%; float:left;border-bottom:1px solid #ccc; }
+.sear_con_w .sear_lm_w .sear_lm #sear_menu ul.lm_1d { position:relative; width:100%; }
+.sear_con_w .sear_lm_w .sear_lm #sear_menu ul.lm_1d li.on { position:relative; width:50%; display:block; float:left; }
+.sear_con_w .sear_lm_w .sear_lm #sear_menu ul.lm_1d li.on a,
+.sear_con_w .sear_lm_w .sear_lm #sear_menu ul.lm_1d li.on a:visited, 
+.sear_con_w .sear_lm_w .sear_lm #sear_menu ul.lm_1d li.on a:hover, 
+.sear_con_w .sear_lm_w .sear_lm #sear_menu ul.lm_1d li.on a:active { width:85.2%; height:41px; padding:0 7%; font-size:15px; line-height:41px; color:#fff; display:block; border-bottom:1px solid #fff; border-right:1px solid #fff; background:#5592b9 url("/home/images/layout/sear_lm_icon.png") no-repeat 95% 10px; }
+.sear_con_w .sear_lm_w .sear_lm #sear_menu ul.lm_1d li.off { position:relative; width:50%; display:block; float:left; }
+.sear_con_w .sear_lm_w .sear_lm #sear_menu ul.lm_1d li.off a,
+.sear_con_w .sear_lm_w .sear_lm #sear_menu ul.lm_1d li.off a:visited { width:85.2%; height:41px; padding:0 7%; font-size:15px; line-height:41px; color:#fff; display:block; border-bottom:1px solid #fff; border-right:1px solid #fff; background:#98a9b6 url("/home/images/layout/sear_lm_icon.png") no-repeat 95% 10px; }
+.sear_con_w .sear_lm_w .sear_lm #sear_menu ul.lm_1d li.off a:hover, 
+.sear_con_w .sear_lm_w .sear_lm #sear_menu ul.lm_1d li.off a:active { width:85.2%; height:41px; padding:0 7%; font-size:15px; line-height:41px; color:#fff; display:block; border-bottom:1px solid #fff; border-right:1px solid #fff; background:#5592b9 url("/home/images/layout/sear_lm_icon.png") no-repeat 95% 10px; }
+
+/* Content */
+.sear_con_w .sear_lm_w .sear_lm #sear_content { position:relative; width:100%; float:left; padding:0px; font-size:14px; color:#666; overflow:hidden; }
+.sear_con_w .sear_lm_w .sear_lm #sear_content .content_w { position:relative; width:100%; min-height:600px; font-size:12px; color:#666; padding:0px 0px 60px 0px; }
+.content_w .sear_con { position:relative; padding:30px 3%; clear:both; overflow:hidden; }
+.content_w .sear_box { position:relative; padding:30px 3%; clear:both; overflow:hidden; background-color:#f9f9f9; border-top:1px solid #bdbdbd; border-bottom:1px solid #bdbdbd; font-size:14px; line-height:30px; color:#000; }
+.content_w .result_w { position:relative; padding:20px 5%; clear:both; overflow:hidden; }
+.content_w .result_w .tit { font-size:18px; line-height:36px; color:#000; font-weight:bold; }
+.content_w span.value { font-size:14px; color:#888; line-height:36px; font-weight:normal; }
+.content_w .more a { float:right; font-size:15px; line-height:36px; color:#0d399e; }
+.content_w .sear_tab_w { position:relative; padding:30px 5%; clear:both; overflow:hidden; background-color:#f9f9f9; border-top:1px solid #bdbdbd; border-bottom:1px solid #bdbdbd; }
+.content_w .sear_tab_w .tit { font-size:18px; color:#000; font-weight:bold; }
+.content_w .sear_tab_w ul.tab_list { margin-top:0px; }
+.content_w .sear_tab_w ul.tab_list li { width:50%; float:left; font-size:14px; line-height:36px; color:#888; background:url("/home/images/layout/sear_bar.gif") no-repeat 80% 15px; }
+.content_w .sear_tab_w ul.tab_list li a
+.content_w .sear_tab_w ul.tab_list li a:visited { font-size:14px; line-height:36px; color:#888; }
+.content_w .sear_tab_w ul.tab_list li a:hover, 
+.content_w .sear_tab_w ul.tab_list li a:active { font-size:14px; line-height:36px; color:#333; text-decoration:underline; }
+.content_w .sear_tab_w ul.tab_list li.bar_none { background:none; }
+.content_w .sear_tab_w ul.tab_list li.bar_tm_none { background:none; }
+.content_w .sr_menu_w { position:relative; padding:30px 5%; clear:both; overflow:hidden; border-bottom:1px solid #bdbdbd; }
+.content_w .sr_menu_w .tit { font-size:18px; color:#000; font-weight:bold; }
+.content_w .sr_menu_w ul.sr_menu { margin-top:20px; }
+.content_w .sr_menu_w ul.sr_menu li a { font-size:14px; line-height:36px; color:#000; padding-left:12px; background:url("/home/images/sub/sear_bull.gif") no-repeat 2px 6px;}
+.content_w .sr_list_w { position:relative; padding:30px 5%; clear:both; overflow:hidden; border-bottom:1px solid #bdbdbd; }
+.content_w .none { position:relative; padding:30px 3%; clear:both; overflow:hidden; border-bottom:0px solid #bdbdbd; }
+.content_w .sr_list_w .tit { font-size:18px; color:#000; font-weight:bold; }
+.content_w .sr_list_w dl.sr_web { margin-top:20px; }
+.content_w .sr_list_w dl.sr_web dt.tit { font-size:15px; line-height:36px; color:#0d399e; text-decoration:underline; }
+.content_w .sr_list_w dl.sr_web dd { margin-top:10px; }
+.content_w .sr_list_w dl.sr_web dd.txt { font-size:15px; line-height:24px; color:#3d3d3d; }
+.content_w .sr_list_w dl.sr_web dd.route a { font-size:15px; line-height:24px; color:#42892f; }
+.sear_page { display:none; }
+.m_sear_page { display:block; position:relative; width:99.5%; text-align:center; margin-top:30px; clear:both; border:1px solid #e4e4e4; background-color:#f8f9fa; clear:both; }
+.m_sear_page ul li { width:100%; height:40px; line-height:40px; text-align:center; font-size:14px; }
+.m_sear_page ul li strong { color:#0d399e; }
+.m_sear_page ul li.prev { position:absolute; top:0px; left:0px; width:80px; height:40px; line-height:38px; text-align:left; background-color:#fff; border-right:1px solid #e4e4e4; }
+.m_sear_page ul li.prev a { display:block; padding-left:20px; background:url("/home/images/board/pl.gif") no-repeat 15px 15px; }
+.m_sear_page ul li.next { position:absolute; top:0px; right:0px; width:80px; height:40px; line-height:38px; text-align:right; background-color:#fff; border-left:1px solid #e4e4e4; }
+.m_sear_page ul li.next a { display:block; padding-right:20px; background:url("/home/images/board/pr.gif") no-repeat 60px 15px; }
+
+/* Right */
+.sear_con_w .sear_lm_w .sear_lm #sear_right { display:none; }
+
+/* Footer ************************************************************************************************************************************************************/
+#sear_footer_w { position:relative; width:100%; min-width:320px; height:130px; margin-top:30px; clear:both; }
+#sear_footer_w .copy { position:relative; width:94%; margin:0px 5%; }
+#sear_footer_w .copy .copy_txt { position:relative; font-size:13px; color:#707070; line-height:24px; text-align:center; }
+#sear_footer_w .copy .copyright { position:relative; font-size:12px; color:#929292; line-height:24px; text-align:center; margin-top:10px; }
+
+}

@@ -1,0 +1,40 @@
+/* 공통 */
+.cont_title01{position:relative;font-size:30px;line-height:1.2em;font-weight:normal;color:#222;}
+.cont_title02{overflow:hidden;position:relative;width:100%;height:auto;padding-top:14px;font-size:28px;font-weight:normal;color:#222}
+
+.about_box01{overflow:hidden;width:100%;height:359px;margin:30px 0 0;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;background:#fafafa}
+
+/* 회사소개 > 기업정보 */
+.about_con01{overflow:hidden;position:relative;width:100%;height:430px;background:url('../images/content/bg_corpPic.jpg') no-repeat center 0; border-bottom:1px dashed #ddd; padding-bottom:70px;}
+.about_con01 ul.about_con01_list{position:absolute;top:0;left:50%;margin-left:-215px;width:430px;height:430px}
+.about_con01 ul li{position:absolute;font-size:16px;color:#222;text-align:center}
+.about_con01 ul li.title{top:179px;left:948px;font-size:23px;color:#fff}
+.about_con01 ul li.title{top:179px;left:178px;font-size:23px;color:#fff}
+.about_con01 ul li.title_sub{top:215px;left:183px;font-size:16px;color:#b7bec8}
+.about_con01 ul li.dc_txt01{top:40px;left:192px}
+.about_con01 ul li.dc_txt02{top:95px;left:70px}
+.about_con01 ul li.dc_txt03{top:95px;left:310px}
+.about_con01 ul li.dc_txt04{top:230px;left:41px}
+.about_con01 ul li.dc_txt05{top:230px;left:328px}
+.about_con01 ul li.dc_txt06{top:337px;left:123px}
+.about_con01 ul li.dc_txt07{top:322px;left:255px}
+
+.about_con02{position:relative;border-bottom:1px dashed #ddd; padding-bottom:70px;}
+.about_con02 .txt01{overflow:hidden;width:100%;height:auto;font-size:20px;color:#333;margin-top:30px;font-family:'NGB'}
+.about_con02 .txt02{overflow:hidden;width:100%;height:auto;margin-top:15px;font-size:16px;color:#555}
+.about_con02 .txt03{overflow:hidden;width:100%;height:auto;margin-top:15px;font-size:16px;line-height:26px;color:#555}
+.about_con02 .txt03 span{font-family:nm}
+
+.about_con03{position:relative;}
+.about_con03_box{overflow:hidden;width:650px;height:225px;margin:40px auto 40px;background:url('../images/content/bg_round02.jpg') no-repeat 0 0}
+.about_con03_box .item{display:table;overflow:hidden;float:left;width:186px;height:188px;margin-left:-50px}
+.about_con03_box .item span{display:table-cell;font-size:18px;line-height:1.2em;color:#222;text-align:center;vertical-align:middle}
+.about_con03_box ul{position:relative;background:transparent}
+.about_con03_box ul li{position:relative;background:transparent;text-align:center;width:218px;height:145px;padding-top:80px;float:left;display:inline-block;font-size:28px}
+.about_con03_box ul li span{display:block; font-size:18px; padding-top:15px;}
+.about_con03_box ul li.dp_txt01{color:#333}
+.about_con03_box ul li.dp_txt02{color:#022c5e; width:214px;}
+.about_con03_box ul li.dp_txt03{color:#0178a2}
+
+
+

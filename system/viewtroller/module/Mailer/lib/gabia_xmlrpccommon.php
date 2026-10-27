@@ -1,0 +1,47 @@
+<?
+include_once(dirname(__FILE__)."/xmlrpc.inc");
+
+class XmlRpcCommon
+{
+	var $rpc_server;
+	var $rpc_endpoint;
+	var $rpc_method;
+	var $rpc_error;
+
+	//$s = sms.gabia.com
+	//$e = api
+	//$m = gabiasms
+	function init( $s, $e, $m )
+	{
+		$this->rpc_server = $s;
+		$this->rpc_endpoint = $e;
+		$this->rpc_method = $m;
+		$GLOBALS['xmlrpc_internalencoding']='UTF-8';
+	}
+
+	function call( $request_xml )
+	{
+		$m = new xmlrpcmsg($this->rpc_method, array(new xmlrpcval($request_xml, "string")));
+		$c = new xmlrpc_client( $this->rpc_endpoint, $this->rpc_server, 80);
+		$c->request_charset_encoding = "UTF-8";
+
+		$r = $c->send($m);
+		if (!$r->faultCode())
+		{
+			$v = $r->value();
+			$decode_v = php_xmlrpc_decode($v);
+			return $decode_v;
+		}
+		else
+		{
+			$this->rpc_error = $c->errstr;
+			return $c->errno;
+		}
+	}
+
+	function getRpcError()
+	{
+		return $this->rpc_error;
+	}
+}
+?>
